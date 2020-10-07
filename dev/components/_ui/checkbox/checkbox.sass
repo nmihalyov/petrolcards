@@ -73,3 +73,30 @@
   &__text
     margin-left: 0.6770833333vw
     font-size: 0.78125vw
+
+@media only screen and (max-width: $adaptive)
+  .checkbox
+    &__input
+      &:checked ~ .checkbox__box
+        .checkbox__box-mark
+          &:before
+            height: 1.5vw
+          &:after
+            width: 3.4375vw
+    &__box
+      width: 7.5vw
+      height: 7.5vw
+      border-radius: 1.875vw
+      border-width: 0.625vw
+      &-mark
+        top: 1.5vw
+        left: 1.208333vw
+        width: 3.4375vw
+        height: 2.1875vw
+        &:before
+          width: 0.625vw
+        &:after
+          height: 0.625vw
+    &__text
+      margin-left: 3.125vw
+      font-size: 3.75vw

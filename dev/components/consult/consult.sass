@@ -71,3 +71,54 @@
     width: 21.61458333vw
   &__btn
     width: 100%
+
+@media only screen and (max-width: $adaptive)
+  .consult
+    margin-bottom: 18.75vw
+    &__heading
+      width: 100%
+      margin-bottom: 15.625vw
+      padding: 0 6.25vw
+      font-size: 8.4375vw
+    &__content
+      width: 100%
+      padding: 15.625vw 6.25vw 18.75vw 6.25vw
+      border-radius: 5vw
+      &-heading
+        margin-bottom: 12.5vw
+        font-size: 8.4375vw
+    &__steps
+      flex-flow: column nowrap
+      margin-bottom: 15.625vw
+    &__step
+      flex-flow: row nowrap
+      width: 100%
+      &:not(:last-child)
+        margin-bottom: 9.375vw
+        &:after
+          top: auto
+          bottom: -9.375vw
+          right: auto
+          left: 10.3125vw
+          height: 9.375vw
+          width: 2px
+      &-count
+        flex-shrink: 0
+        width: 21.25vw
+        height: 21.25vw
+        margin-right: 5vw
+        margin-bottom: 0
+        font-size: 6.25vw
+      &-text
+        padding-right: 6.25vw
+        text-align: left
+    &__row
+      flex-flow: column nowrap
+      margin-bottom: 0
+      .input
+        margin-bottom: 3.125vw
+    &__checkbox
+      align-items: flex-start
+      width: 100%
+      margin: 6.25vw 0 7.8125vw 0
+      padding: 0 6.25vw

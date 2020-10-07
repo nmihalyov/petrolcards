@@ -1,4 +1,5 @@
 .header
+  z-index: 99
   position: absolute
   top: 0
   left: 0
@@ -37,3 +38,19 @@
       size: contain
       position: center
       repeat: no-repeat
+
+@media only screen and (max-width: $adaptive)
+  .header
+    padding-right: 6.25vw
+    &__logo
+      width: 23.4375vw
+      height: 23.4375vw
+      background-size: 12.1875vw
+    &__email
+      display: none
+    &__phone
+      margin-right: 3.125vw
+      font-size: 4.6875vw
+    &__tel
+      width: 13.125vw
+      height: 13.125vw

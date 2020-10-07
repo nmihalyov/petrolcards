@@ -19,3 +19,23 @@
   &__copyright,
   &__develop
     color: #BCBCBC
+
+@media only screen and (max-width: $adaptive)
+  .footer
+    flex-flow: column nowrap
+    padding: 12.5vw 6.25vw
+    &__tel
+      display: flex
+      flex-flow: column nowrap
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: 9.375vw
+      font-size: 6.25vw
+    &__email
+      margin: 6.25vw 0 0 0
+      font-size: 4.6875vw
+    &__copyright
+      margin-bottom: 3.125vw
+      font-size: 3.4375vw
+    &__develop
+      font-size: 3.4375vw
