@@ -1,0 +1,53 @@
+.hero
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+  margin-bottom: 9.895833333vw
+  &__image
+    width: 50%
+  &__content
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: flex-start
+    width: 50%
+    padding: 8.854166667vw 6.145833333vw 0 7.03125vw
+  &__heading
+    margin-bottom: 2.1875vw
+    line-height: 1.23
+    font:
+      family: 'BloggerSans', Helvetica, sans-serif
+      size: 3.385416667vw
+      weight: 700
+  &__subheading
+    margin-bottom: 1.40625vw
+    color: #666666
+    font:
+      size: 1.25vw
+      weight: 700
+  &__list
+    margin: 0 0 3.645833333vw 0
+    padding: 0
+    &-item
+      position: relative
+      display: block
+      padding-left: 1.5625vw
+      color: #666666
+      line-height: 1.5
+      font-size: 1.041666667vw
+      &:not(:last-child)
+        margin-bottom: 1.302083333vw
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 0.5729166667vw
+        left: 0.15625vw
+        width: 0.3645833333vw
+        height: 0.3645833333vw
+        background-color: $green
+        border-radius: 50%
+  &__buttons
+    .button:not(:last-child)
+      margin-right: 1.5625vw

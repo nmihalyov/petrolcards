@@ -1,0 +1,16 @@
+include ../_ui/button/button
+
+mixin hero
+  section.hero
+    img.hero__image(src="img/hero.png", alt="")
+    .hero__content
+      h1.hero__heading Топливные карты для юридических лиц и ИП
+      p.hero__subheading Преимущества топливных карт:
+      ul.hero__list
+        li.hero__list-item Более 13 000 АЗС по одной карте, включая ведущие бренды: «Газпромнефть», «Лукойл», «Роснефть»;
+        li.hero__list-item Топливо со скидкой от 1 до 3%;
+        li.hero__list-item Экономия: возврат НДС 20% и общая экономия на топливе до 25%!
+        li.hero__list-item Гарантия качества и выпуск карт в день заказа.
+      .hero__buttons
+        +button-primary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+        +button-secondary('link', 'Подробнее о карте', '', {link: 'javascript:void(0)'})

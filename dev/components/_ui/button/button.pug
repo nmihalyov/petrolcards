@@ -1,0 +1,17 @@
+mixin button-primary(type, text, className, options)
+  if type === 'link'
+    a.button.button--primary(class=`${className || ''}`, href=options.link)= text
+
+mixin button-secondary(type, text, className, options)
+  if type === 'link'
+    a.button.button--secondary(class=`${className || ''}`, href=options.link)= text
+  else if type === 'button'
+    button.button.button--secondary(class=`${className || ''}`)= text
+
+mixin button-tertiary(type, text, className, options)
+  if type === 'link'
+    a.button.button--tertiary(class=`${className || ''}`, href=options.link)= text
+
+mixin button-minor(type, text, className)
+  if type === 'submit'
+    button.button.button--minor(type="submit", class=`${className || ''}`)= text

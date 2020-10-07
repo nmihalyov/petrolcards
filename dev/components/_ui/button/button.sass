@@ -1,0 +1,56 @@
+.button
+  display: inline-flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+  height: 3.645833333vw
+  padding: 0 2.34375vw
+  border-radius: 0.8333333333vw
+  border: none
+  text-decoration: none
+  cursor: pointer
+  outline: 0
+  text-transform: uppercase
+  letter-spacing: 0.06em
+  font:
+    size: 0.78125vw
+    weight: 700
+  &--primary
+    background-color: $green
+    transition: background-color .3s ease
+    color: #fff
+    &:hover
+      background-color: lighten($green, 5)
+    &:active
+      transition: none
+      background-color: darken($green, 2)
+  &--secondary
+    background-color: $grey
+    transition: background-color .3s ease
+    color: $black
+    &:hover
+      background-color: darken($grey, 3)
+    &:active
+      transition: none
+      background-color: darken($grey, 5)
+  &--tertiary
+    border: 2px solid $green
+    color: $green
+    transition: all .3s ease
+    &:hover
+      background-color: $green
+      color: #fff
+    &:active
+      transition: none
+      background-color: darken($green, 2)
+  &--minor
+    border: 2px solid #fff
+    color: #fff
+    transition: all .3s ease
+    &:hover
+      background-color: #fff
+      color: $green
+    &:active
+      transition: none
+      background-color: darken(#fff, 2)
+      border-color: darken(#fff, 2)

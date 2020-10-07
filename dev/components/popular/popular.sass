@@ -1,0 +1,192 @@
+.popular
+  margin-bottom: 9.895833333vw
+  &__heading
+    margin-bottom: 3.125vw
+    line-height: 1.23
+    text-align: center
+    font:
+      family: 'BloggerSans', Helvetica, sans-serif
+      size: 3.385416667vw
+      weight: 700
+  &__tabs
+    overflow: hidden
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    margin-bottom: 3.125vw
+    &-item
+      display: flex
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+      align-items: center
+      height: 3.645833333vw
+      padding: 0 2.5vw
+      background-color: $grey
+      text-transform: uppercase
+      letter-spacing: 0.06em
+      transition: background-color .3s ease
+      color: transparentize($black, 0.6)
+      cursor: pointer
+      font-weight: 700
+      &:hover
+        background-color: darken($grey, 3)
+      &:active
+        transition: none
+        background-color: darken($grey, 5)
+      &:first-child
+        border-top-left-radius: 0.8333333333vw
+        border-bottom-left-radius: 0.8333333333vw
+      &:last-child
+        border-top-right-radius: 0.8333333333vw
+        border-bottom-right-radius: 0.8333333333vw
+      &--active
+        pointer-events: none
+        background-color: $green !important
+        color: #fff
+  &__content:not(:first-child)
+    display: none
+  &__slider
+    position: relative
+    width: 76.5625vw
+    margin: 0 auto
+    &-arrow
+      position: absolute
+      top: 16.40625vw
+      width: 1.510416667vw
+      height: 0.8333333333vw
+      cursor: pointer
+      background:
+        image: url('../img/icons/arrow.svg')
+        size: contain
+        position: center
+        repeat: no-repeat
+      &--prev
+        left: -3.125vw
+      &--next
+        right: -3.125vw
+        transform: rotate(180deg)
+    .slick-dots
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+      align-items: center
+      width: 75vw
+      height: 3px
+      margin: 3.90625vw 0 0 0
+      padding: 0
+      background-color: #EFF2F6
+      li
+        flex-grow: 1
+        display: block
+        height: 3px
+        background-color: transparent
+        transition: background-color .3s ease
+      .slick-active
+        background-color: $green
+  &__card
+    width: 23.95833333vw
+    padding: 2.083333333vw
+    border-radius: 2.083333333vw
+    background-color: #FAFCFF
+    &-img
+      overflow: hidden
+      width: 100%
+      height: 12.5vw
+      margin-bottom: 1.5625vw
+      border-radius: 0.5208333333vw
+      box-shadow: 0px 24px 40px #D2E9F8
+      background:
+        size: cover
+        position: center
+        repeat: no-repeat
+    &-name
+      margin-bottom: 2.083333333vw
+      text-align: center
+      font-weight: 700
+    &-list
+      margin: 0 0 2.083333333vw 0
+      padding: 0 0 0 2.447916667vw
+      &-item
+        position: relative
+        display: block
+        padding-left: 1.927083333vw
+        color: #666666
+        font-size: 0.7291666667vw
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          top: -0.15625vw
+          left: 0
+          width: 1.25vw
+          height: 1.25vw
+          border-radius: 50%
+          background: 
+            size: contain
+            position: center
+            repeat: no-repeat
+        &:not(:last-child)
+          margin-bottom: 1.041666667vw
+        &--benefit
+          font-weight: 700
+          &:after
+            content: ''
+            display: block
+            position: absolute
+            top: -0.15625vw
+            left: -1.302083333vw
+            width: 0.5208333333vw
+            height: 1.302083333vw
+            background:
+              image: url('../img/icons/arrow-up.svg')
+              size: contain
+              position: center
+              repeat: no-repeat
+        &[data-icon="world"]
+          &:before
+            background-image: url('../img/icons/world.svg')
+        &[data-icon="gear"]
+          &:before
+            background-image: url('../img/icons/gear.svg')
+        &[data-icon="oil"]
+          &:before
+            background-image: url('../img/icons/oil.svg')
+        &[data-icon="drops"]
+          &:before
+            background-image: url('../img/icons/drops.svg')
+        &[data-icon="alarm"]
+          &:before
+            background-image: url('../img/icons/alarm.svg')
+        &[data-icon="ruble"]
+          &:before
+            background-image: url('../img/icons/ruble.svg')
+    .button
+      width: 100%
+      &:not(:last-child)
+        margin-bottom: 1.041666667vw
+    &-more
+      display: none
+      &-list
+        position: relative
+        padding: 2.34375vw 0
+        &:before,
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          left: -2.083333333vw
+          width: calc(100% + 2.083333333vw * 2)
+          height: 1px
+          background-color: #E6EBF1
+        &:before
+          top: 0
+        &:after
+          bottom: 0
+        ul
+          margin-bottom: 0
+      &-compare
+        width: 14.94791667vw
+        margin: 0 auto
+        padding: 2.083333333vw 0 3.125vw 0

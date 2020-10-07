@@ -1,0 +1,73 @@
+.consult
+  margin-bottom: 8.333333333vw
+  &__heading
+    width: 59.89583333vw
+    margin: 0 auto 3.125vw auto
+    line-height: 1.23
+    text-align: center
+    font:
+      family: 'BloggerSans', Helvetica, sans-serif
+      size: 3.385416667vw
+      weight: 700
+  &__content
+    width: 73.95833333vw
+    margin: 0 auto
+    padding: 6.770833333vw 14.58333333vw 7.8125vw 14.58333333vw
+    border-radius: 2.083333333vw
+    background-color: $green
+    color: #fff
+    &-heading
+      margin-bottom: 3.645833333vw
+      text-align: center
+      font:
+        size: 1.822916667vw
+        weight: 700
+  &__steps
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 4.166666667vw
+  &__step
+    position: relative
+    display: flex
+    flex-flow: column nowrap
+    justify-content: flex-start
+    align-items: center
+    width: 9.895833333vw
+    &:not(:last-child)
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 1.71875vw
+        right: 0
+        right: -10.88541667vw
+        width: 14.0625vw
+        height: 2px
+        background-color: #fff
+    &-count
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+      align-items: center
+      width: 3.541666667vw
+      height: 3.541666667vw
+      margin-bottom: 1.302083333vw
+      border: 2px solid #fff
+      border-radius: 50%
+      font:
+        size: 1.041666667vw
+        weight: 700
+    &-text
+      text-align: center
+  &__row
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 1.666666667vw
+  &__checkbox
+    width: 21.61458333vw
+  &__btn
+    width: 100%

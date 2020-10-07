@@ -1,0 +1,182 @@
+include ../_ui/button/button
+include ../_ui/checkbox/checkbox
+
+mixin popular
+  section.popular.js-tabs
+    p.popular__heading Популярные топливные карты
+    .popular__tabs
+      p.popular__tabs-item.popular__tabs-item--active.js-tab(data-tab="1") Общее число АЗС
+      p.popular__tabs-item.js-tab(data-tab="2") Дополнительные сервисы
+      p.popular__tabs-item.js-tab(data-tab="3") Скидки
+    .popular__contents
+      .popular__content.js-tab-content(data-tab="1")
+        .popular__slider.js-popular-slider
+          -for (let i = 0; i < 3; i++)
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-1.png')")
+                p.popular__card-name Топливные карты Вездеход Online
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item(data-icon="oil") Скидка 5% на 30 000 АЗС
+                      li.popular__card-list-item(data-icon="drops") Скидка 5% на автомойки
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="alarm") Скидка 50% на оплату штрафов
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="ruble") Цена карты — бесплатно
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-2.png')")
+                p.popular__card-name Топливные карты Газпром (ГЭС)
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item(data-icon="oil") Скидка 5% на 30 000 АЗС
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="drops") Скидка 10% на автомойки
+                      li.popular__card-list-item(data-icon="alarm") Скидка30% на оплату штрафов
+                      li.popular__card-list-item(data-icon="ruble") Цена карты — 299₽/месяц
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-3.png')")
+                p.popular__card-name Топливные карты Газпромнефть
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="oil") Скидка 10% на 30 000 АЗС
+                      li.popular__card-list-item(data-icon="drops") Скидка 5% на автомойки
+                      li.popular__card-list-item(data-icon="alarm") Скидка 40% на оплату штрафов
+                      li.popular__card-list-item(data-icon="ruble") Цена карты — 1200₽/год
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+      .popular__content.js-tab-content(data-tab="2")
+        .popular__slider.js-popular-slider
+          -for (let i = 0; i < 3; i++)
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-1.png')")
+                p.popular__card-name Топливные карты Вездеход Online
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item(data-icon="oil") Скидка 5% на 30 000 АЗС
+                      li.popular__card-list-item(data-icon="drops") Скидка 5% на автомойки
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="alarm") Скидка 50% на оплату штрафов
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="ruble") Цена карты — бесплатно
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-2.png')")
+                p.popular__card-name Топливные карты Газпром (ГЭС)
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item(data-icon="oil") Скидка 5% на 30 000 АЗС
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="drops") Скидка 10% на автомойки
+                      li.popular__card-list-item(data-icon="alarm") Скидка30% на оплату штрафов
+                      li.popular__card-list-item(data-icon="ruble") Цена карты — 299₽/месяц
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-3.png')")
+                p.popular__card-name Топливные карты Газпромнефть
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="oil") Скидка 10% на 30 000 АЗС
+                      li.popular__card-list-item(data-icon="drops") Скидка 5% на автомойки
+                      li.popular__card-list-item(data-icon="alarm") Скидка 40% на оплату штрафов
+                      li.popular__card-list-item(data-icon="ruble") Цена карты — 1200₽/год
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+      .popular__content.js-tab-content(data-tab="3")
+        .popular__slider.js-popular-slider
+          -for (let i = 0; i < 3; i++)
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-1.png')")
+                p.popular__card-name Топливные карты Вездеход Online
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item(data-icon="oil") Скидка 5% на 30 000 АЗС
+                      li.popular__card-list-item(data-icon="drops") Скидка 5% на автомойки
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="alarm") Скидка 50% на оплату штрафов
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="ruble") Цена карты — бесплатно
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-2.png')")
+                p.popular__card-name Топливные карты Газпром (ГЭС)
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item(data-icon="oil") Скидка 5% на 30 000 АЗС
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="drops") Скидка 10% на автомойки
+                      li.popular__card-list-item(data-icon="alarm") Скидка30% на оплату штрафов
+                      li.popular__card-list-item(data-icon="ruble") Цена карты — 299₽/месяц
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')
+            .popular__slide
+              .popular__card
+                .popular__card-img(style="background-image: url('img/inhtml/card-3.png')")
+                p.popular__card-name Топливные карты Газпромнефть
+                ul.popular__card-list
+                  li.popular__card-list-item(data-icon="world") Широкая география приема карт
+                  li.popular__card-list-item(data-icon="gear") Эффективный контроль средств
+                .popular__card-more
+                  .popular__card-more-list
+                    ul.popular__card-list
+                      li.popular__card-list-item.popular__card-list-item--benefit(data-icon="oil") Скидка 10% на 30 000 АЗС
+                      li.popular__card-list-item(data-icon="drops") Скидка 5% на автомойки
+                      li.popular__card-list-item(data-icon="alarm") Скидка 40% на оплату штрафов
+                      li.popular__card-list-item(data-icon="ruble") Цена карты — 1200₽/год
+                  .popular__card-more-compare
+                    +checkbox-green('compare', '', false, true, 'Добавить карту на сравнение')
+                +button-tertiary('link', 'Заказать консультацию', '', {link: 'javascript:void(0)'})
+                +button-secondary('button', 'Подробнее', 'js-popular-more')

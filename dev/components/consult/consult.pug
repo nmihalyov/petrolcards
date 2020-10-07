@@ -1,0 +1,27 @@
+include ../_ui/button/button
+include ../_ui/input/input
+include ../_ui/checkbox/checkbox
+
+mixin consult
+  section.consult
+    p.consult__heading Мы подберем самый выгодный тариф для вашего бизнеса
+    .consult__content
+      p.consult__content-heading Заказать консультацию
+      .consult__steps
+        .consult__step
+          p.consult__step-count 1
+          p.consult__step-text Оставьте заявку
+        .consult__step
+          p.consult__step-count 2
+          p.consult__step-text Мы подберем лучшую карту для Вашего бизнеса
+        .consult__step
+          p.consult__step-count 3
+          p.consult__step-text Бесплатно выпустим и&nbsp;доставим Вам карты
+      form.consult__form(action="")
+        .consult__row
+          +input('text', 'name', 'Введите ваше имя', '', true)
+          +input('tel', 'phone', 'Введите телефон', '', true)
+        .consult__row
+          +input('email', 'email', 'Введите e-mail', '', true)
+          +checkbox-white('policy', 'consult__checkbox', true, true, 'Я согласен с политикой конфиденциальности и обработки персональных данных')
+        +button-minor('submit', 'Заказать консультацию', 'consult__btn')

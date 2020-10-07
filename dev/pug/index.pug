@@ -1,3 +1,9 @@
+include ../components/header/header
+include ../components/hero/hero
+include ../components/popular/popular
+include ../components/consult/consult
+include ../components/footer/footer
+
 doctype
 html(lang="ru", prefix="og: http://ogp.me/ns#")
   head
@@ -7,3 +13,8 @@ html(lang="ru", prefix="og: http://ogp.me/ns#")
     include assets/_scripts
   body
     .page-wrapper
+      +header
+      +hero
+      +popular
+      +consult
+      +footer

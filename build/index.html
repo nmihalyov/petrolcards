@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content="">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
+    <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
+    <link rel="icon" href="img/favicons/512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/favicons/152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="js/libs.min.js"></script>
+    <script defer src="js/common.min.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header container">
+        <div class="header__logo"></div>
+        <div class="header__info"><a class="header__email" href="mailto:info@petrolcards.ru">info@petrolcards.ru</a>
+          <p class="header__phone">8 800 222 54 97</p>
+          <div class="header__tel"></div>
+        </div>
+      </header>
+      <section class="hero"><img class="hero__image" src="img/hero.png" alt=""/>
+        <div class="hero__content">
+          <h1 class="hero__heading">Топливные карты для юридических лиц и ИП</h1>
+          <p class="hero__subheading">Преимущества топливных карт:</p>
+          <ul class="hero__list">
+            <li class="hero__list-item">Более 13 000 АЗС по одной карте, включая ведущие бренды: «Газпромнефть», «Лукойл», «Роснефть»;</li>
+            <li class="hero__list-item">Топливо со скидкой от 1 до 3%;</li>
+            <li class="hero__list-item">Экономия: возврат НДС 20% и общая экономия на топливе до 25%!</li>
+            <li class="hero__list-item">Гарантия качества и выпуск карт в день заказа.</li>
+          </ul>
+          <div class="hero__buttons"><a class="button button--primary" href="javascript:void(0)">Заказать консультацию</a><a class="button button--secondary" href="javascript:void(0)">Подробнее о карте</a>
+          </div>
+        </div>
+      </section>
+      <section class="popular js-tabs">
+        <p class="popular__heading">Популярные топливные карты</p>
+        <div class="popular__tabs">
+          <p class="popular__tabs-item popular__tabs-item--active js-tab" data-tab="1">Общее число АЗС</p>
+          <p class="popular__tabs-item js-tab" data-tab="2">Дополнительные сервисы</p>
+          <p class="popular__tabs-item js-tab" data-tab="3">Скидки</p>
+        </div>
+        <div class="popular__contents">
+          <div class="popular__content js-tab-content" data-tab="1">
+            <div class="popular__slider js-popular-slider">
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__content js-tab-content" data-tab="2">
+            <div class="popular__slider js-popular-slider">
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__content js-tab-content" data-tab="3">
+            <div class="popular__slider js-popular-slider">
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-1.png')"></div>
+                  <p class="popular__card-name">Топливные карты Вездеход Online</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="alarm">Скидка 50% на оплату штрафов</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="ruble">Цена карты — бесплатно</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-2.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпром (ГЭС)</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item" data-icon="oil">Скидка 5% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="drops">Скидка 10% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка30% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 299₽/месяц</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+              <div class="popular__slide">
+                <div class="popular__card">
+                  <div class="popular__card-img" style="background-image: url('img/inhtml/card-3.png')"></div>
+                  <p class="popular__card-name">Топливные карты Газпромнефть</p>
+                  <ul class="popular__card-list">
+                    <li class="popular__card-list-item" data-icon="world">Широкая география приема карт</li>
+                    <li class="popular__card-list-item" data-icon="gear">Эффективный контроль средств</li>
+                  </ul>
+                  <div class="popular__card-more">
+                    <div class="popular__card-more-list">
+                      <ul class="popular__card-list">
+                        <li class="popular__card-list-item popular__card-list-item--benefit" data-icon="oil">Скидка 10% на 30 000 АЗС</li>
+                        <li class="popular__card-list-item" data-icon="drops">Скидка 5% на автомойки</li>
+                        <li class="popular__card-list-item" data-icon="alarm">Скидка 40% на оплату штрафов</li>
+                        <li class="popular__card-list-item" data-icon="ruble">Цена карты — 1200₽/год</li>
+                      </ul>
+                    </div>
+                    <div class="popular__card-more-compare">
+                      <label class="checkbox checkbox--green">
+                        <input class="checkbox__input" type="checkbox" name="compare" checked="checked"/>
+                        <div class="checkbox__box">
+                          <div class="checkbox__box-mark"></div>
+                        </div>
+                        <p class="checkbox__text">Добавить карту на сравнение</p>
+                      </label>
+                    </div>
+                  </div><a class="button button--tertiary" href="javascript:void(0)">Заказать консультацию</a>
+                  <button class="button button--secondary js-popular-more">Подробнее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="consult">
+        <p class="consult__heading">Мы подберем самый выгодный тариф для вашего бизнеса</p>
+        <div class="consult__content">
+          <p class="consult__content-heading">Заказать консультацию</p>
+          <div class="consult__steps">
+            <div class="consult__step">
+              <p class="consult__step-count">1</p>
+              <p class="consult__step-text">Оставьте заявку</p>
+            </div>
+            <div class="consult__step">
+              <p class="consult__step-count">2</p>
+              <p class="consult__step-text">Мы подберем лучшую карту для Вашего бизнеса</p>
+            </div>
+            <div class="consult__step">
+              <p class="consult__step-count">3</p>
+              <p class="consult__step-text">Бесплатно выпустим и&nbsp;доставим Вам карты</p>
+            </div>
+          </div>
+          <form class="consult__form" action="">
+            <div class="consult__row">
+              <input class="input" type="text" name="name" required="required" placeholder="Введите ваше имя"/>
+              <input class="input" type="tel" name="phone" required="required" placeholder="Введите телефон"/>
+            </div>
+            <div class="consult__row">
+              <input class="input" type="email" name="email" required="required" placeholder="Введите e-mail"/>
+              <label class="checkbox checkbox--white consult__checkbox">
+                <input class="checkbox__input" type="checkbox" name="policy" required="required" checked="checked"/>
+                <div class="checkbox__box">
+                  <div class="checkbox__box-mark"></div>
+                </div>
+                <p class="checkbox__text">Я согласен с политикой конфиденциальности и обработки персональных данных</p>
+              </label>
+            </div>
+            <button class="button button--minor consult__btn" type="submit">Заказать консультацию</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__tel">8 800 222 54 97<a class="footer__email" href="mailto:info@petrolcards.ru">info@petrolcards.ru</a></p>
+        <p class="footer__copyright">© 2010-2020 PetrolCards.ru Все права защищены</p>
+        <p class="footer__develop">Разработка сайта — студия дизайна «Арбуз»</p>
+      </footer>
+    </div>
+  </body>
+</html>

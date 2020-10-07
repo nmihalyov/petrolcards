@@ -1,0 +1,13 @@
+mixin checkbox-green(name, className, required, checked, text)
+  label.checkbox.checkbox--green(class=`${className || ''}`)
+    input.checkbox__input(type="checkbox", name=name, required=required, checked=checked)
+    .checkbox__box
+      .checkbox__box-mark
+    p.checkbox__text!= text
+
+mixin checkbox-white(name, className, required, checked, text)
+  label.checkbox.checkbox--white(class=`${className || ''}`)
+    input.checkbox__input(type="checkbox", name=name, required=required, checked=checked)
+    .checkbox__box
+      .checkbox__box-mark
+    p.checkbox__text!= text
